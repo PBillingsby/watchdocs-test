@@ -1,0 +1,9 @@
+sources:
+  github_pr: true
+  changelog: true
+  jira: false
+  notion: false
+
+docs:
+  paths:
+    - docs
