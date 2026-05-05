@@ -2,7 +2,7 @@ name: WatchDocs
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [ready_for_review]
 
 jobs:
   watchdocs:
@@ -17,3 +17,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          jira_url: ${{ secrets.JIRA_URL }}
+          jira_token: ${{ secrets.JIRA_TOKEN }}
+          jira_email: ${{ secrets.JIRA_EMAIL }}
+          notion_token: ${{ secrets.NOTION_TOKEN }}
