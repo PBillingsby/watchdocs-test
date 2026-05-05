@@ -2,7 +2,10 @@ name: WatchDocs
 
 on:
   pull_request:
-    types: [ready_for_review]
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+      - master
 
 jobs:
   watchdocs:
