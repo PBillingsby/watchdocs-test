@@ -2,7 +2,7 @@ sources:
   github_pr: true
   changelog: true
   jira: true
-  notion: false
+  notion: true
 
 docs:
   paths:
