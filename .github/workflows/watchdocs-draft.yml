@@ -1,0 +1,21 @@
+name: WatchDocs Draft
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  draft:
+    if: github.event.comment.body == '/watchdocs draft'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: PBillingsby/watchdocs@main
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          mode: draft
