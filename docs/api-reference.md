@@ -55,3 +55,16 @@ Returns a list of scheduled emails that have not yet been sent.
 | 200 | Scheduled emails retrieved successfully |
 | 401 | Missing API key |
 | 403 | Invalid API key |
+
+## List Scheduled Emails
+
+Returns a list of scheduled emails that have not yet been sent.
+
+**Endpoint:** `GET /emails/scheduled`
+
+**Response Codes:**
+| Status | Description |
+|--------|-------------|
+| 200 | Scheduled emails retrieved successfully |
+| 401 | Missing API key |
+| 403 | Invalid API key |
