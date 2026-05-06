@@ -29,3 +29,16 @@ Sends an email to a recipient.
 Returns a list of sent emails.
 
 **Endpoint:** `GET /emails`
+
+## List Scheduled Emails
+
+Returns a list of scheduled emails.
+
+**Endpoint:** `GET /emails/scheduled`
+
+**Response Codes:**
+| Status | Description |
+|--------|-------------|
+| 200 | Scheduled emails retrieved successfully |
+| 401 | Missing API key |
+| 403 | Invalid API key |
