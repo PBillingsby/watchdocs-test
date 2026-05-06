@@ -13,15 +13,8 @@ export async function sendEmail(params: {
     method: 'POST',
     body: JSON.stringify(params)
   })
-}// trigger watchdocs
-// trigger
-// trigger 2
-// trigger notion test
-// trigger
-// trigger 2
-// trigger 2
-// trigger doc scoring
-// trigger
-// trigger
-// trigger
-// trigger
+}
+
+export async function listScheduledEmails(): Promise<void> {
+  await fetch('/emails/scheduled', { method: 'GET' })
+}
